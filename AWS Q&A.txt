@@ -1,0 +1,195 @@
+AWS Q&A 
+
+
+1) IaaS, PaaS, and SaaS:
+=====================================
+
+IaaS (Infrastructure as a Service): Provides virtualized computing resources over the internet (e.g., AWS EC2).
+
+PaaS (Platform as a Service): Offers a platform with development tools, databases, and runtime environments (e.g., AWS Elastic Beanstalk).
+
+SaaS (Software as a Service): Delivers software applications over the internet (e.g., AWS WorkSpaces).
+
+
+2) Advantages of Cloud Computing:
+====================================
+Cost-efficient, scalable, highly available, flexible, secure, and offers automated management.
+
+
+3) AWS Region:
+=====================================
+
+A geographic area containing multiple Availability Zones for AWS services.
+
+
+4) Availability Zone:
+=====================================
+A data center within an AWS Region that is isolated for fault tolerance and high availability.
+
+
+5) AWS Regions:
+=====================================
+AWS has multiple Regions worldwide, including us-east-1 (N. Virginia), eu-west-1 (Ireland), ap-south-1 (Mumbai), etc.
+
+
+6) AWS Service Categories:
+=====================================
+Compute, Storage, Networking, Database, Security, Analytics, AI/ML, IoT, and Developer Tools.
+
+
+7) Object Storage vs. Block Storage:
+=====================================
+
+Object Storage (e.g., Amazon S3): Stores data as objects, ideal for unstructured data.
+
+Block Storage (e.g., Amazon EBS): Stores data in fixed-sized blocks, used for databases and operating systems.
+
+
+8) Two AWS Compute Services:
+===================================
+
+EC2 (Elastic Compute Cloud): Provides virtual servers.
+
+Lambda: Runs code without managing servers (serverless computing).
+
+
+9) Two AWS Storage Services:
+====================================
+
+S3 (Simple Storage Service): Scalable object storage for files and backups.
+
+EBS (Elastic Block Store): Persistent block storage for EC2 instances.
+
+
+10) AWS Shared Responsibility Model:
+=====================================
+Defines security responsibilities between AWS and customers. AWS secures the cloud (hardware, infrastructure), while customers secure their data, applications, and access controls.
+
+11) AWS Identity and Access Management (IAM) Role:
+====================================================
+
+A set of permissions assigned to AWS services or users to access resources without requiring long-term credentials.
+
+12) IAM Policy:
+===================================
+
+A JSON document that defines permissions for IAM users, groups, and roles to control access to AWS resources.
+
+13) Amazon Machine Image (AMI):
+===================================
+
+A pre-configured template that contains an OS, applications, and configurations to launch EC2 instances.
+
+14) Amazon EC2 Instance Types & Use Cases:
+============================================
+
+General Purpose (t3, m5): Balanced performance, good for web apps.
+
+Compute Optimized (c5): High CPU power, ideal for gaming servers.
+
+Memory Optimized (r5, x1): For databases and analytics.
+
+Storage Optimized (i3, d2): High-speed storage, used for big data.
+
+GPU Instances (p3, g4): Best for machine learning and graphics processing.
+
+15) Virtual Private Cloud (VPC):
+======================================
+
+A logically isolated network within AWS that allows users to launch AWS resources securely.
+
+16) Public vs. Private Subnet:
+==================================
+
+Public Subnet: Connected to the internet via an internet gateway, used for web servers.
+
+Private Subnet: No direct internet access, used for databases and backend services.
+
+
+17) Pillars of the AWS Well-Architected Framework:
+=====================================================
+
+Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability
+
+18) Design Principles for Operational Excellence:
+===================================================
+
+Automate operations, document processes, anticipate failure, make frequent, small, reversible changes, and learn from operational failures.
+
+
+19) Design Principles for Security:
+=======================================
+Implement strong identity controls, enable traceability, apply security at all layers, automate security best practices, and protect data in transit and at rest.
+
+20) Design Principles for Reliability:
+=======================================
+
+Design for failure, test recovery procedures, scale horizontally, monitor system health, and automate recovery.
+
+21) Factors Influencing Performance Efficiency:
+==================================================
+
+Select the right instance type, use managed services, optimize network performance, monitor and adjust configurations, and experiment with new technologies.
+
+22) Focus Areas for Cost Optimization:
+===========================================
+
+Right-size resources, use Reserved Instances, leverage Spot Instances, implement auto-scaling, and monitor usage with AWS Cost Explorer.
+
+23) Design Principles for Sustainability:
+============================================
+
+Use energy-efficient resources, reduce waste, optimize workload locations, manage demand efficiently, and adopt sustainable development practices.
+
+24) Configuration Orchestration:;
+===========================================
+
+Automates and manages infrastructure provisioning and deployment, ensuring consistency across environments.
+
+25) Configuration Management & Tools:
+=======================================
+
+The process of maintaining software and system configurations consistently.
+
+Common tools: Ansible, Puppet, Chef, SaltStack.
+
+26) Continuous Integration (CI):
+=======================================
+
+A practice where developers frequently merge code changes into a shared repository, with automated testing and builds.
+
+27) Continuous Delivery (CD):
+===================================
+
+Extends CI by automatically preparing and deploying applications to production or staging environments.
+
+28) AWS CloudFormation & Its Advantages:
+============================================
+
+A service for defining and provisioning AWS infrastructure using code.
+
+Advantages:
+
+Infrastructure as Code (IaC): Automates deployments.
+
+Consistency: Ensures uniform infrastructure setup.
+
+Rollback & Dependency Management: Handles errors efficiently.
+
+29) JSON vs. YAML & Key Differences:
+=========================================
+
+Both are data serialization formats used in configuration files.
+
+Differences:
+
+Syntax: JSON uses brackets {}, YAML uses indentation.
+
+Readability: YAML is more human-readable, JSON is machine-friendly.
+
+Usage: JSON is widely used in APIs, YAML in infrastructure automation (e.g., CloudFormation).
+
+30) Stack in CloudFormation:
+======================================
+
+A collection of AWS resources managed as a single unit, defined in a CloudFormation template.
